@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: eloquent
+        psr4_prefix: eloquent
+        src_path: app
