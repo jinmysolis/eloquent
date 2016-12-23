@@ -18,7 +18,7 @@
         </tr>
         
     </thead>
-    @include ('query.partials.list-users')
+    @include ('partials.list-users')
         
         
         
