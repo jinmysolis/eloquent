@@ -12,46 +12,14 @@ use Faker\Factory as Faker;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [
+            'as'=>'home',
+            'uses'=>'PagesController@home'
+        ]);
    
-   
-   return 'BaBita';
-});
+   Route::get('/all', [
+            'as'=>'all',
+            'uses'=>'QueryController@getAll'
+        ]);
+  
 
-
-Route::get('create', function () {
-    
-    $faker= Faker::create();
-    
-   $user = User::create ([
-       'name' => $faker->firstName,
-       'email' =>$faker->email,
-       'password' => bcrypt ('137525627jinmy'),
-       'gender' => $faker->randomElement(['f','m']),
-       'biography' => $faker->text(200)
-       
-   ]) ;
-   
-   return $user;
-});
-
-
-Route::get('read/{id}', function ($id) {
-    
-    $user = User::find ($id);
-       return $user; 
-     ;
-   
-   
-});
-
-
-
-Route::get('delete/{id}', function ($id) {
-    
-    $user = User::find ($id);
-    $user->delete(); 
-    return 'usuario elim';
-   
-   
-});
