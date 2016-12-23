@@ -3,7 +3,8 @@
 @section('content')
 
 <h1 class="page-header">
-    Todos los usuarios
+    Todos los usuarios de la base de datos
+    
 </h1>
 <table class="table table-hover table-striped">
     <thead>
