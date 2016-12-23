@@ -29,6 +29,19 @@
                               Todos los usuarioa(all)
                           </a>
                       </li>
+                      
+                      <li>
+                          <a href="{{route('get','f')}}">
+                              Todos los usuario (Femeninas)
+                          </a>
+                      </li>
+                      
+                      <li>
+                          <a href="{{route('get','m')}}">
+                              Todos los usuario(Masculinos)
+                          </a>
+                      </li>
+                      
                   </ul>
                   
               </li>

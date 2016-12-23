@@ -21,5 +21,10 @@ Route::get('/', [
             'as'=>'all',
             'uses'=>'QueryController@getAll'
         ]);
+   
+   Route::get('/get/{gender}', [
+            'as'=>'get',
+            'uses'=>'QueryController@eloquentGet'
+        ]);
   
 

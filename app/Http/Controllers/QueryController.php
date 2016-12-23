@@ -22,7 +22,18 @@ class QueryController extends Controller
         
         
         $users = User::all();
-        return view('query.all', compact('users'));
+        $title="todos los usuarios All";
+        return view('query.methods', compact('title','users'));
+    }
+    
+    
+    public function eloquentGet($gender)
+    {
+       
+        $users = User::where('gender',$gender)
+                ->get();
+        $title="todos los usuarios Get";
+        return view('query.methods', compact('title','users'));
     }
     
     
