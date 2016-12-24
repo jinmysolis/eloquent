@@ -12,20 +12,16 @@
     
 </h1>
 <table class="table table-hover table-striped">
-    <thead>
-        
-        <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Genero</th>
-            <th>Biografia</th>
-        </tr>
-        
-    </thead>
+    
+    
+    @include ('partials.head-user')
+    
+    
+    
+    
     @include ('partials.list-users')
         
-        
+       
         
     
 </table>

@@ -47,6 +47,15 @@ class QueryController extends Controller
     }
     
     
+     public function eloquentDelete($id)
+    {
+       
+        $user = User::find($id);
+        $user->delete();
+        return view('pages.delete');
+    }
+    
+    
    
 
     
