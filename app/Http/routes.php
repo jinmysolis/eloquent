@@ -39,3 +39,7 @@ Route::get('/', [
         ]);
   
 
+Route::get('/lists', [
+            'as'=>'lists',
+            'uses'=>'QueryController@eloquentLists'
+        ]);

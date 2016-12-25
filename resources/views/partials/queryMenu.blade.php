@@ -28,6 +28,12 @@
                           </a>
                       </li>
                       
+                      <li>
+                          <a href="{{route('lists')}}">
+                             Listar ususrios Select(Lists)
+                          </a>
+                      </li>
+                      
                   </ul>
                   
               </li>
