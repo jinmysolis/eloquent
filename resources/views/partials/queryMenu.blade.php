@@ -34,6 +34,12 @@
                           </a>
                       </li>
                       
+                      <li>
+                          <a href="{{route('first-last')}}">
+                             Listar Primer y Ultimo Ususario
+                          </a>
+                      </li>
+                      
                   </ul>
                   
               </li>
